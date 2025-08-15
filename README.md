@@ -1,9 +1,11 @@
+🌐 **Language**: [English](#) | [日本語](README-ja.md)
+
 # Pico W CO2 Monitor for Long-Term Operation
 
 ![IMG_6133](https://github.com/user-attachments/assets/501ac347-8d22-4c50-b5d5-3e9043985742)
 ![IMG_6136](https://github.com/user-attachments/assets/66ac1ded-a521-45ee-99ad-bb02a97fbbde)
 
-This MicroPython project turns a Raspberry Pi Pico W into a robust, long-term CO2, temperature, and humidity monitor. It is designed for stability over months or even years, incorporating features like a watchdog timer, automatic reconnections, memory management, and preventive daily reboots.
+This MicroPython project turns a Raspberry Pi Pico W into a robust, long-term CO2, temperature, and humidity monitor. It is designed for stability over months or even years, incorporating features like watchdog timers, automated recovery mechanisms, and proactive daily reboots to prevent long-term issues.
 
 Sensor data (CO2, Temperature, Humidity, THI) is displayed on a 4-digit 7-segment display and published to an MQTT broker for data logging and analysis.
 
@@ -114,7 +116,7 @@ The device publishes data to the following MQTT topics:
 
 ### Logging
 
-The device maintains a log file named `system.log` on its flash storage. This log is useful for debugging issues without needing a constant serial connection. The log file is automatically cleared when it reaches 50KB to prevent filling up the storage.
+The device maintains a log file named `system.log` on its flash storage. This log is useful for debugging issues without needing a constant serial connection. The log file is automatically cleared when it grows too large to prevent storage issues.
 
 ## Customization
 
@@ -130,4 +132,3 @@ This script and its documentation were refined and structured with the assistanc
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
